@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #384f5c;
+  min-height: 100vh;
+  font-family: Garamond, serif;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  padding: 10vh;
+}
+
+.frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9/16;
+  overflow: hidden;
+  
+  background: #6d9190;
+}
+
+.layer {
+  position: absolute;
+  inset: 0;
+  
+  background-size: cover;
+  background-position: center;
+  
+  will-change: transform;
+}
+
+.layer1 {
+  background-image: url('layers/sky1.png');
+  z-index: 1;
+}
+
+.layer2 {
+  background-image: url('layers/water2.png');
+  z-index: 2;
+}
+
+.layer3 {
+  background-image: url('layers/fish3.png');
+  z-index: 3;
+}
+
+.layer4 {
+  background-image: url('layers/surface4.png');
+  z-index: 4;
+}
+
+.layer5 {
+  background-image: url('layers/sharkboy5.png');
+  z-index: 5;
+}
+
+.layer6 {
+  background-image: url('layers/glow6.png');
+  mix-blend-mode: screen;
+  z-index: 6;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  
+  margin-top: 5vh;
+}
+
+.author {
+  text-align: center;
+  font-size: .95rem;
+  font-style: italic;
+  color: #89aaad;
+}
+
+.description {
+  text-align: justify;
+  font-size: 1rem;
+  color: #cfe3e2;
+  
+  max-width: 50vh;  
+  margin-top: 1vh;
+}
